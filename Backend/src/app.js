@@ -15,7 +15,7 @@ app.use(cors());
 app.use(Express.json({limit: '40kb'}));
 app.use(Express.urlencoded({limit: '40kb', extended: true}));
 
-app.use("/api/v1/users", userRoutes);
+app.use("/api/v1/users", usersRoutes);
 
 const start = async () => {
     const connectionDb = await mongoose.connect("mongodb+srv://riyaVideo:Riyarane07@cluster0.kjdfh.mongodb.net/");
